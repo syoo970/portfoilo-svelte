@@ -5,10 +5,14 @@
 </script>
 
 <Headers
+	logoSrc="/logo.png"
 	links={[
 		{ text: 'Home', href: '/' },
 		{ text: 'About', href: '/about' },
 		{ text: 'Contact', href: '/contact' }
 	]}
 />
-{@render children()}
+<div class="h-header"></div>
+<main class="p-2">
+	{@render children()}
+</main>
