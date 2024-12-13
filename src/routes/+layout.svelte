@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 	import { Headers } from '../widgets/Header';
+	import { ModeWatcher } from 'mode-watcher';
+
 	let { children } = $props();
 </script>
 
@@ -12,7 +14,7 @@
 		{ text: 'Contact', href: '/contact' }
 	]}
 />
-<div class="h-header"></div>
-<main class="p-2">
+<main class="relative top-[var(--header-height)] p-4">
 	{@render children()}
 </main>
+<ModeWatcher></ModeWatcher>
