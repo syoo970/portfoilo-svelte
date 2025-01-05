@@ -14,7 +14,7 @@
 		{ text: 'Contact', href: '/contact' }
 	]}
 />
-<main class="relative top-[var(--header-height)] p-4">
+<main class="relative top-[var(--header-height)] px-16 py-12">
 	{@render children()}
 </main>
 <ModeWatcher></ModeWatcher>
