@@ -1,5 +1,7 @@
 <script lang="ts">
 	import MaleProgrammer from '../../../entities/svg-images/ui/male-programmer.svelte';
+	import SnsBlock from '../../../widgets/SnsBlock/ui/sns-block.svelte';
+	import LinkedIn from 'lucide-svelte/icons/linkedin';
 </script>
 
 <section class="intro-section">
@@ -10,9 +12,9 @@
 				프론트엔드 개발자 <br /> 유승범입니다
 			</h2>
 			<p class="max-lg:text-center">
-				Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat.
+				새로운 기술과 문제를 마주할 때 가장 큰 즐거움을 느낍니다. 매 순간 더 나은 방법을 고민하며,
+				실패를 두려워하지 않고 도전합니다. 변화와 성장을 추구하며, 협업을 통해 더 큰 가치를
+				만들어가는 개발자가 되려고 노력하고 있습니다
 			</p>
 		</div>
 		<div class="mb-[-12px] flex basis-1/2 justify-center object-cover">
@@ -22,7 +24,9 @@
 		</div>
 	</div>
 	<div class="flex w-full items-center">
-		<div class="mobile-sns-section">sns 및 블로그</div>
+		<div class="mobile-sns-section">
+			<SnsBlock icons={[{ icon: LinkedIn }]} />
+		</div>
 		<div class="h-[2px] basis-3/4 bg-black max-lg:hidden"></div>
 	</div>
 </section>
