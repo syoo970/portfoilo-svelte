@@ -1,7 +1,6 @@
 <script lang="ts">
 	import MaleProgrammer from '../../../entities/svg-images/ui/male-programmer.svelte';
 	import SnsBlock from '../../../widgets/SnsBlock/ui/sns-block.svelte';
-	import LinkedIn from 'lucide-svelte/icons/linkedin';
 </script>
 
 <section class="intro-section">
@@ -25,9 +24,9 @@
 	</div>
 	<div class="flex w-full items-center">
 		<div class="mobile-sns-section">
-			<SnsBlock icons={[{ icon: LinkedIn }]} />
+			<SnsBlock />
 		</div>
-		<div class="h-[2px] basis-3/4 bg-black max-lg:hidden"></div>
+		<div class="h-[2px] basis-3/4 bg-black dark:bg-white max-lg:hidden"></div>
 	</div>
 </section>
 
